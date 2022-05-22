@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메인 페이지</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+<style>
+* {margin: 0; padding: 0; list-style: none;}
+
+.hd_wrap {width: 100%;}
+.hd_top_wrap {background-color: rgb(60, 106, 244); width: 100%; height: 40px;}
+.languages_div {padding-left: 200px; float: left}
+.languages {color: #fff; background-color: rgb(37, 63, 142); width: 120px; height: 30px; text-align: center; font-size: 14px; padding-top: 10px ;} 
+#tnb li{float:right; padding: 10px; }
+#tnb li:first-child { padding-right: 200px;}
+#tnb li a, #tnb li span { color: #fff ;}
+.hd_top_link {padding-top: 8px; height: 40px;}
+.hd_top_link p{float: left; padding-top: 2px; padding-left: 10px; color: #fff; font-size: 15px;}
+.hd_top_link a:first-child img{width: 24px; height: 24px; float: left; padding-left: 80px;}
+.hd_top_link a:nth-child(2) img{width: 24px; height: 24px; float: left; padding-left: 40px;}
+.hd_top_link a:nth-child(3) img{width: 24px; height: 24px; float: left; padding-left: 40px;}
+a { text-decoration: none;}
+
+#gnb {clear: both ; width: 100%;height: 100px;}
+.logo {padding-left: 200px; width: 300px; float: left;}
+.menu1 { font-size: 16px; color: #333; font-family: 'Nanum Gothic', sans-serif; font-weight: 600; padding: 40px;}
+#gnb >ul >li {position: relative; width: 200px; float: left; padding-top: 36px;}
+#gnb >ul >li> .sub {display: none; background-color: rgb(213, 67, 67); position: absolute; top: 80px; width: 3000px;height: 300px; left: 38px}
+#gnb >ul:hover>li .sub{display: block;}
+.mainslide {width: 200%; margin: 0;}
+.mainslide img {width: 1916px; height: 700px;}
+
+
+
+</style>
+</head>
+<body>
+<div class="container">
+<header id="hd">
+<div class="hd_wrap">
+	<div class="hd_top_wrap">
+    	<nav id="tnb">
+			<ul>		
+				<li><span>손님</span></li>
+				<li><a href="login.jsp">로그인</a></li>
+				<li><a href="agreement.jsp">회원가입</a></li>		
+			</ul>
+		</nav>
+		<div class="languages_div">
+			<p class="languages">LANGUAGES</p>
+		</div>
+		<div class="hd_top_link">
+			<a href="https://www.yeoju.go.kr/main/yj"  target="_blank">
+				<img src="./img/icon3.png" alt="시청아이콘">
+				<p>여주시청</p>
+			</a>
+			<a href="https://phone.yeoju.go.kr/"  target="_blank">
+				<img src="./img/icon1.png" alt="폰아이콘">	
+				<p>폰박물관</p>
+			</a>
+			<a href="https://www.yeoju.go.kr/ryeo/index.do" target="_blank">
+				<img src="./img/icon2.png" alt="려아이콘">
+				<p>아트뮤지엄 려</p>
+			</a>
+		</div>
+	</div>
+
+	<nav id="gnb">
+		<a href="index.html" class="logo"><img src="./img/ci_culture2.jpg" alt="로고"></a>
+		<ul>
+			<li><a href="" class="menu1">관광명소</a>
+				<ul class="sub">		
+							<li class="cate"><a href='PlaceCtrl?ptype=A&prop=11'>유적지</a></li>								
+
+							<li class="cate"><a href='PlaceCtrl?ptype=A&prop=12'>남한강</a></li>								
+
+							<li class="cate"><a href='PlaceCtrl?ptype=A&prop=13'>관광휴양지</a></li>								
+
+							<li class="cate"><a href='PlaceCtrl?ptype=A&prop=14'>레저스포츠</a></li>								
+
+							<li class="cate"><a href='PlaceCtrl?ptype=A&prop=15'>여주5일장</a></li>								
+				</ul>
+			</li>
+			<li><a href="" class="menu1">문화축제</a>
+				<ul class="sub">
+
+							<li class="cate"><a href='PlaceCtrl?ptype=B&prop=11'>문화축제</a></li>								
+
+							<li class="cate"><a href='PlaceCtrl?ptype=B&prop=12'>문화체육시설</a></li>								
+
+				</ul>
+			</li>
+			<li><a href="" class="menu1">숙박/음식/쇼핑</a>
+				<ul class="sub">
+	
+
+							<li class="cate"><a href='PlaceCtrl?ptype=C&prop=11'>콘도미니엄</a></li>								
+
+							<li class="cate"><a href='PlaceCtrl?ptype=C&prop=12'>호텔</a></li>								
+
+							<li class="cate"><a href='PlaceCtrl?ptype=C&prop=13'>모텔,여관</a></li>								
+
+							<li class="cate"><a href='PlaceCtrl?ptype=C&prop=14'>민박,펜션</a></li>								
+
+							<li class="cate"><a href='PlaceCtrl?ptype=D&prop=11'>맛길</a></li>								
+
+							<li class="cate"><a href='PlaceCtrl?ptype=D&prop=12'>모범음식점</a></li>								
+
+							<li class="cate"><a href='PlaceCtrl?ptype=D&prop=13'>위생등급제 음식점</a></li>								
+
+							<li class="cate"><a href='PlaceCtrl?ptype=E&prop=11'>특산물</a></li>								
+
+				</ul>
+			</li>
+			<li><a href="" class="menu1">체험관광</a>
+				<ul class="sub">
+	
+
+							<li class="cate"><a href='PlaceCtrl?ptype=F&prop=11'>도자기</a></li>								
+
+				</ul>
+			</li>
+			<li><a href="" class="menu1">교통</a>
+				<ul class="sub">
+	
+
+							<li class="cate"><a href='PlaceCtrl?ptype=G&prop=11'>국내</a></li>								
+
+							<li class="cate"><a href='PlaceCtrl?ptype=G&prop=11'>국외</a></li>								
+
+							<li class="cate"><a href='PlaceCtrl?ptype=G&prop=11'>일반(국내,국외)</a></li>								
+
+				</ul>
+			</li>	
+
+			<li><a href="" class="menu1">커뮤니티</a>
+				<ul class="sub">
+					<li class="cate"><a href="GetUserImpressionListCtrl" >이용후기</a></li>
+					<li class="cate"><a href="" >자료실</a></li>
+					<li class="cate"><a href="GetUserNoticeListCtrl" >공지사항</a></li>
+				</ul>
+			<li>
+		</ul>	
+	</nav>
+</div>
+</header>
+<div id="content">
+	<div class="mainslide">
+		<img_box>
+			<img src="./img/main.png" alt="">
+		</img_box>
+		<img_box>
+			<img src="./img/main5.png" alt="">
+		</img_box>
+	</div>
+</div>
+<footer id="ft">
+	
+<div class="ft_wrap">
+	푸터
+</div>
+</footer>
+</div>
+</body>
+</html>
